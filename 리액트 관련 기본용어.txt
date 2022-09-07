@@ -59,9 +59,22 @@ homepage:https://깃허브 아이디.github.io/myreactbuild/
 
 4)저장소 설정/페이지메뉴/branch를 main으로 선택후 save버튼 클릭
 
-4.리액트프로젝트를 깃과 연동시 주의사항
+5.리액트프로젝트를 깃과 연동시 주의사항
 모듈 파일의 용량이 크기에 미리 백업을 받고 빈 폴더로 옮겨가면서 할 예정
 .gitignore .txt파일로 생성을 해야 노드모듈즈를 제외하고 깃 파일 관리를 원활히 할 수있다.
 (안 할시 하루 종일 걸림)
+
+6.리액트 절대경로 변수
+%PUBLIC_URL% (HTML내에서)
+process.env.PUBLIC_URL(js 내에서)
+
+example)
+<link href="%PUBLIC_URL%/css/style.css">
+img.setAttribute('src','${process.env.PUBLIC_URL/js/script/js'})
+
+
+-Single Page App
+-컴퍼넌트 구성을 자바스크립트로 할 수 있다.
+-페이지 이동 속도가 향상
 
 
