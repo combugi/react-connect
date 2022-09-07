@@ -1,0 +1,48 @@
+nodejs-자바스크립트 독립 실행기;
+
+npm - 자바스크립트 라이브러리 설치 및 실행 ; 스토어와 같은 기능;
+
+barbel-jsx문법; 참고... scss도 자바스크립트의 일종;
+
+webpack-압축기;최근실행한 용어들을 주로 사용하게하고 그렇지 않은건 지우는 기능이 있다(자바스크립트와 관련됨)
+webpack은 따로 공부를 해야할정도로 리액트보다 복잡하다
+
+create-react-app 라이브러리(webpack 순한맛)
+
+
+
+
+
+
+1.node js 16.17 설치 권장
+
+vscode 에서 json파일
+    "emmet.includeLanguages":{
+        "javascript":"javascriptreact"
+    }
+코드 추가한 다음
+
+익스텐션창에서
+Reactjs code snippets,Auto Import 설치
+속성>호환성 에서
+-vscode 관리자 권한 실행 체크
+
+2.nodejs를 설치했다면 vscode에서 터미널 실행 node -v를 입력후 진행
+vscode를 껐다가 다시 켜야 작동이 됨
+
+3.리액트 프로젝트 세팅
+npm install -g create-react-app // create-react-app -V(오류? powercell에선 오류 cmd에선 작동)
+
+
+-리액트 프로젝트 폴더 만들기
+create-react-app foldername(카멜)혹은 FolderName(파스칼)
+
+-리액트 서버환경 실행
+npm run start
+
+4.리액트프로젝트를 깃과 연동시 주의사항
+모듈 파일의 용량이 크기에 미리 백업을 받고 빈 폴더로 옮겨가면서 할 예정
+.gitignore .txt파일로 생성을 해야 노드모듈즈를 제외하고 깃 파일 관리를 원활히 할 수있다.
+(안 할시 하루 종일 걸림)
+
+
