@@ -39,6 +39,24 @@ create-react-app foldername(카멜)혹은 FolderName(파스칼)
 
 -리액트 서버환경 실행
 npm run start
+-리액트 서버환경 종료
+ctrl+c
+-리액트 빌드
+1)npm run build
+2)build 폴더안에 파일들을 호스트 루트에 업로드 (알드라이브에 업로드를 해야한다.)
+-리액트 깃허브 호스팅
+1)깃허브 저장소 생성
+2)저장소 생성시 Add a README file 체크를 해야한다
+3)addFile업로드 후 commit change 클릭
+  (리액트일 경우,빌드전 package.json 파일을 수정을 해야한다)
+- npm install --save gh-pages
+- page json 파일 하단 내용 추가 
+homepage:https://깃허브 아이디.github.io/myreactbuild/  
+  "script"{ "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+       }
+
+4)저장소 설정/페이지메뉴/branch를 main으로 선택후 save버튼 클릭
 
 4.리액트프로젝트를 깃과 연동시 주의사항
 모듈 파일의 용량이 크기에 미리 백업을 받고 빈 폴더로 옮겨가면서 할 예정

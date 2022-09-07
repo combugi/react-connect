@@ -3,7 +3,7 @@ import React from 'react';
 const App = () => {
   return (
     <>
-      1일차 수업 완료
+    리액트 첫 디플로이
     </>
   );
 };
