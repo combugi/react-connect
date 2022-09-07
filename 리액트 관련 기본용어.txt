@@ -46,12 +46,13 @@ ctrl+c
 2)build 폴더안에 파일들을 호스트 루트에 업로드 (알드라이브에 업로드를 해야한다.)
 -리액트 깃허브 호스팅
 1)깃허브 저장소 생성
-2)저장소 생성시 Add a README file 체크를 해야한다
+2)저장소 생성시 Add a README file 체크를 해야한다.
 3)addFile업로드 후 commit change 클릭
   (리액트일 경우,빌드전 package.json 파일을 수정을 해야한다)
 - npm install --save gh-pages
 - page json 파일 하단 내용 추가 
-homepage:https://깃허브 아이디.github.io/myreactbuild/  
+homepage:https://깃허브 아이디.github.io/myreactbuild/ 
+ 
   "script"{ "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
        }
