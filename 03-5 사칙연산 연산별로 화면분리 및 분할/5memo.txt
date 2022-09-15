@@ -1,0 +1,11 @@
+app.js( _stage,_changeStage //화면전환역활) _changeStage를 Start.js로 전달해줘야한다 
+Start.js( if_stage===start//스타트 컴포넌트) +더하기 버튼,빼기 버튼 두개다 온클릭했을때 스테이지를 변경 해준다
+즉 화면을 변경(app.js에서 생성)
+Plus.js( if_stage===Plus//플러스 컴포넌트) 입력하는 창 (입력하는 값은 스테이트 변수로 만든다)과  결과화면버튼 만들기
+Minus.js(if_stage===Minus //마이너스 컴포넌트) 입력하는 창 (입력하는 값은 스테이트 변수로 만든다)과  결과화면버튼 만들기
+Result.js (if_stage===Result //최종 결과 컴포넌트 ) 정오답(스테이트) 체크,점수(스테이트)체크,결과화면 처음으로 이동
+
+
+props
+contest
+redux
