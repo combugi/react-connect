@@ -1,0 +1,27 @@
+
+useEffect(()=>{
+  console.log()
+})
+//화면이 변경될때마다 실행
+
+
+
+
+useEffect(()=>{
+  
+},[])//화면이 만들어지는 첫 순간
+
+
+useEffect(()=>{
+  return(()=>{
+    console.log('컴퍼넌트 사라지는 순간')
+  })
+})
+랜더링,use Effect
+
+
+
+
+useState()사용시 주의할 점
+useState()는 이벤트 밖에서 사용금지,
+화면업데이트useffect()=>{}시  사용금지 
