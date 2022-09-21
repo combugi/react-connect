@@ -3,13 +3,13 @@ import { useContext } from 'react';
 import { AppContext } from '../App';
 
 const CompBtn = ({ btnI }) => {
-  let { _str, _changeStr } = useContext(AppContext)
+  let { _str, _changeStr,_showError,_showSorry } = useContext(AppContext)
   const fn = () => {
     if (btnI.type === "string") {
       let str = _str
       str += btnI.char
       if (str.length > 30) {
-        alert("입력식이 너무길어요")
+        _showError(true)
       } else {
         _changeStr(str)
       }
@@ -30,7 +30,7 @@ const CompBtn = ({ btnI }) => {
         str = String(str)
         _changeStr(str)
       } catch {
-        alert("입력 오류")
+        _showSorry(true)
       }
 
 
